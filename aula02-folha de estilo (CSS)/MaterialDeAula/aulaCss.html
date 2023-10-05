@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - folha de estilo</title>
+    <style>
+        p{color:#1619dc;
+
+        }
+/* . class */
+/* #id   */
+        .subtituloColorido{color: aqua;
+
+        }
+
+        #tituloPrincipal{
+            color:#FB8500 ;
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /*decoração de fonte*/
+            text-decoration: underline
+        }
+
+        body{
+            /*background color*/
+            background-color: rgba(0, 0, 0, 0.359);  
+            color: white;
+            text-align: center;
+            /*alinhar textos*/
+        }
+        /*ordem de prioridade de renderização: tag class id*/
+
+        img{
+            /*largura*/
+            width: 600px;
+            height: 600px;
+            /*float é para flutuar para direção*/
+            float: center;
+            /*border radius é para arredondar a imagem*/
+            border-radius: 50px;
+            /*borda: tipo da borda, cor e espressura*/
+            border: solid black 5px ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: #c1121f; ">  AULA 2 - CSS</h1>
+    <H3 id="tituloPrincipal">TITULO BACANA</H3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore tempore, nesciunt deleniti atque nisi voluptatibus corrupti rerum et sint, molestias corporis maxime, quam non odio voluptatum repudiandae sunt ipsum?</p>
+    <H3>TITULO  MAIS BACANA</H3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore tempore, nesciunt deleniti atque nisi voluptatibus corrupti rerum et sint, molestias corporis maxime, quam non odio voluptatum repudiandae sunt ipsum?</p> 
+    <H3 class="subtituloColorido">TITULO SUPIMPA</H3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore tempore, nesciunt deleniti atque nisi voluptatibus corrupti rerum et sint, molestias corporis maxime, quam non odio voluptatum repudiandae sunt ipsum?</p> 
+    <H3 class="subtituloColorido" >TITULO MAIS SUPIMPA AINDA!</H3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore tempore, nesciunt deleniti atque nisi voluptatibus corrupti rerum et sint, molestias corporis maxime, quam non odio voluptatum repudiandae sunt ipsum?</p> 
+    <img src="dunas.jpg" alt="paisagem do deserto">
+    <img src="barcos.jpg" alt="paisagem de barcos">
+    <img src="cristoRedentor.jpg" alt="Imagem de uma das maravilhas do mundo, cristo redentor">
+</body>
+</html>
