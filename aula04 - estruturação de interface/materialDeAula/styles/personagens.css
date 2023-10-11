@@ -20,7 +20,7 @@ section{
     border-radius: 20px;
     background: linear-gradient(90deg, #155ab5 50%, #3d0abc 60%, #0033ff 100%); 
 background-size: 400% 400%;
-animation: animationName 5s ease infinite;
+animation: animationName 2.5s ease infinite;
 }
 
 .postagem{
