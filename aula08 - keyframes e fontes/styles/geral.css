@@ -1,0 +1,96 @@
+@keyframes mudaCor{
+    0%{
+        background-color: crimson;
+    }
+    10%{
+        background-color: blue;
+    }
+    20%{
+        background-color: black;
+        width: 300px;
+    }
+    30%{
+        background-color: rgb(149, 255, 0);
+    }
+    40%{
+        background-color: rgb(255, 6, 238);
+    }
+    50%{
+        background-color: rgb(130, 34, 34);
+    }
+    60%{
+        background-color: orange;
+    }
+    70%{
+        background-color: purple;
+    }
+    80%{
+        background-color: green;
+    }
+    90%{
+        background-color: white;
+    }
+    100%{
+        background-color: peru;
+    }
+}
+
+@keyframes mudaBackground{
+    0%{
+        background-image: url(../images/montanha.jpg);
+        transition: 1s;
+    }
+    50%{
+        background-image: url(../images/oceano.jpg);
+        transition: 1s;
+    }
+    100%{
+        background-image: url(../images/paisagem.jpg);
+        transition: 1s;
+    }
+}
+
+
+
+@font-face{
+    font-family: inter ;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    /*tipos de arquivo de fonte: otf, ttf */
+}
+
+@font-face{
+    font-family: street;
+    src: url(../fonts/Inter/fatal_fighter/Fatal\ Fighter.ttf);
+    font-weight: normal;
+}
+
+h3{
+    font-family: inter;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: inter;
+
+
+}
+
+#caixaCor{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    animation-name: mudaCor ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1;
+}
+
+#caixaImagem{
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/oceano.jpg);
+    background-size: cover;
+    background-position: right;
+    animation: mudaBackground 15s infinite;
+}
