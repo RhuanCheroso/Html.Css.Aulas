@@ -1,0 +1,45 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.listas{
+    width: 500px;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#viagem{
+    background-color: rgb(92, 138, 222);
+}
+
+#compras{
+    background-color: rgb(213, 27, 27);
+}
+
+#compras ul{
+    list-style-type: circle;
+}
+
+#dicionario{
+    background-color: rgb(167, 99, 232);
+}
+
+#computadores{
+    background-color: rgb(85, 201, 83);
+}
+
+dt{
+    font-size: 14pt;
+    color: black;
+}
+
+dd{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+ul li{
+    margin: 5px 10px;
+}
