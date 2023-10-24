@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width: 768px)">
+     <link rel="stylesheet" href="styles/landscape.css" media="screen and (orientation : landscape)"><!-- LANDSCAPE - paisagem -->
+   <link rel="stylesheet" href="styles/portrait.css" media="screen and (orientation : portrait)"> <!-- PORTRAIT - retrato em pé   -->
+    
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+            <img src="images/nissan.jpg" alt="">
+        </div>
+            <nav id="opcoesPc">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Atividades</a></li>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Carros Usados</a></li>
+                </ul>
+            </nav>
+            <!-- mobile -->
+            <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="images/menuIcon.svg" alt="">
+            </div>
+        </header>
+<!-- Menu mobile -->
+        <nav id="opcoesMobile">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Atividades</a></li>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Carros Usados</a></li>
+            </ul> 
+        </nav>
+<!-- Menu Mobile -->
+        <main>
+
+            <picture>
+                <!-- picture - muitos srcs -->
+                <source srcset="images/carneiro.jpg" media="screen and (max-width : 768px)">
+                <img src="images/carneiro.jpg" alt="Uma escada bonita">
+            </picture>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus excepturi sed distinctio consequuntur aliquam dolore eum minima, aliquid aut doloremque placeat? Nisi nulla praesentium quae eum quia eius. Assumenda, commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt impedit repellendus voluptatibus maxime ipsa nulla, laudantium similique voluptate saepe id atque non? Aliquid provident commodi quibusdam nobis id, natus nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit laudantium praesentium quibusdam nemo eos, ut quam odio? Distinctio quis, voluptates nesciunt similique amet dolorem accusantium rem dicta quaerat perferendis? </p>
+        </main>
+        <footer></footer>
+    </div>
+
+
+    <script>
+        function abrirOpcoes(){
+            if(opcoesMobile.style.display == "none"){
+                opcoesMobile.style.display = "flex"
+            }else{
+                opcoesMobile.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
