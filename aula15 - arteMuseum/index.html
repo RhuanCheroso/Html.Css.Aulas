@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArteMuseu</title>
     <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width: 768px) ">
 </head>
 <body>
     <div id="pagina">
@@ -17,15 +18,29 @@
                      <li><a href="#">Galeria</a></li>
                      <li><a href="#">Contato</a></li>
                  </ul>
-
             </nav>
+            <div id="menuIcon" onclick="abrirMenu()">
+                <img  class="imagem" src="images/menuIcon.svg" alt="">
+            </div>
         </header>
+        <nav id="menuMobile">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+       </nav>
         <main>
             <h2>DESTAQUE DA SEMANA</h2>
             <hr>
             <div id="destaque">
                  <h3>Elizabeth</h3>
-                 <img class="imagem" src="images/elizabeth.jpg" alt="">
+                 <picture>
+                     <source class="imagem" srcset="images/elizabethMenor.png" media="screen and (max-width : 768px) ">
+                     <source class="imagem" srcset="images/elizabethLandscape.png" media="screen and (orientation: landscape) and (max-height : 500px) ">
+                     <img class="imagem" src="images/elizabeth.jpg" alt="">
+                 </picture>
+                 
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sequi eaque quod quam, asperiores quisquam, ullam expedita similique totam adipisci eum minima, fuga doloribus! Earum eligendi minus praesentium excepturi explicabo.</p>
                  <button type="button">Ver Sobre</button>
             </div>
@@ -35,19 +50,19 @@
                 
             <section id="galeria">
                 <div class="post">
-                    <h5>TITULO DA ARTEA</h5>
+                    <h5>TITULO DA ARTE</h5>
                     <img class="imagem" src="images/arte1.jpg" alt="">
                     <p>descrição da arte</p>
                     <button type="button">Ver Mais</button>
                 </div>
                 <div class="post">
-                    <h5>TITULO DA ARTEA</h5>
+                    <h5>TITULO DA ARTE</h5>
                     <img class="imagem" src="images/arte2.jpg" alt="">
                     <p>descrição da arte</p>
                     <button type="button">Ver Mais</button>
                 </div>
                 <div class="post">
-                    <h5>TITULO DA ARTEA</h5>
+                    <h5>TITULO DA ARTE</h5>
                     <img class="imagem" src="images/arte3.jpg" alt="">
                     <p>descrição da arte</p>
                     <button type="button">Ver Mais</button>
@@ -56,5 +71,14 @@
         </main>
         <footer></footer>
     </div>
+    <script>
+        function abrirMenu(){
+            if(menuMobile.style.display == "none"){
+                menuMobile.style.display = "flex";
+            }else{
+                menuMobile.style.display = "none"; 
+            }
+        }
+    </script>
 </body>
 </html>
